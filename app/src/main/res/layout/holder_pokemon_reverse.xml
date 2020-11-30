@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent="0.2"
+        android:orientation="vertical" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/start_radius_background"
+        app:layout_constraintStart_toStartOf="@id/vertical_guide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="end"
+            android:layout_marginStart="@dimen/horizontal_page_margin"
+            android:layout_marginEnd="@dimen/horizontal_page_margin"
+            app:layout_constraintTop_toTopOf="@id/pokeball_img"
+            app:layout_constraintBottom_toTopOf="@id/firstType_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/pokeball_img"
+            android:textColor="@android:color/white"
+            style="@style/TextView"
+            tools:text="Bulbasaur"
+            android:id="@+id/pokemonName_txt"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/pokeball_img"
+            android:alpha="0.2"
+            android:layout_margin="5dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_pokeball"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <ImageView
+            app:layout_constraintStart_toStartOf="@id/pokeball_img"
+            android:id="@+id/pokemon_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:layout_constraintEnd_toEndOf="@id/pokeball_img"
+            app:layout_constraintTop_toTopOf="@id/pokeball_img"
+            app:layout_constraintBottom_toBottomOf="@id/pokeball_img" />
+
+        <TextView
+            android:id="@+id/firstType_txt"
+            style="@style/ItemTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/pokeball_img"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Normal" />
+        <TextView
+            android:layout_marginStart="12dp"
+            tools:text="Fire"
+            android:id="@+id/secondType_txt"
+            app:layout_constraintEnd_toStartOf="@id/firstType_txt"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/ItemTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="SmallSp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

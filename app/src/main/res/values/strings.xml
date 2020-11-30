@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PokéApp</string>
+    <string name="retry_loading">Retry</string>
+    <string name="generic_error_message">Ops! Something went wrong.</string>
+    <string name="details_stats_section">Stats</string>
+    <string name="details_ability">Ability:</string>
+    <string name="details_height">Height:</string>
+    <string name="details_weight">Weight:</string>
+    <string name="details_weight_format">%1$d hg</string>
+    <string name="details_height_format">%1$d dm</string>
+    <string name="details_go_back">Go Back</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_font_size">18sp</dimen>
+    <dimen name="list_type_font_size">12sp</dimen>
+    <dimen name="characteristic_font_size">16sp</dimen>
+    <dimen name="details_type_font_size">16sp</dimen>
+    <dimen name="stat_name_font_size">12sp</dimen>
+    <dimen name="button_font_size">16sp</dimen>
+    <dimen name="horizontal_page_margin">15dp</dimen>
+    <dimen name="button_margin">8dp</dimen>
+    <dimen name="stat_circle_size">50dp</dimen>
+    <dimen name="details_pokeball_size">120dp</dimen>
+    <dimen name="error_anim_size">50dp</dimen>
+</resources>

@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="TextView" parent="AppTheme">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="fontFamily">@font/proxima_nova_regular</item>
+    </style>
+    <style name="TextView.Pokemon" parent="TextView">
+        <item name="fontFamily">@font/pokemon_solid</item>
+    </style>
+    <style name="TextView.Light" parent="TextView">
+        <item name="fontFamily">@font/proxima_nova_thin</item>
+    </style>
+    <style name="TextView.Bold" parent="TextView">
+        <item name="fontFamily">@font/proxima_nova_extrabold</item>
+    </style>
+
+    <style name="ItemTypeTextView" parent="TextView">
+        <item name="android:textSize">@dimen/list_type_font_size</item>
+        <item name="android:background">@drawable/top_radius_background</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:alpha">0.75</item>
+    </style>
+
+    <style name="DetailsTypeTextView" parent="TextView">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/details_type_font_size</item>
+        <item name="android:background">@drawable/bottom_radius_background</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="StatNameTextView" parent="TextView">
+        <item name="android:textSize">@dimen/stat_name_font_size</item>
+        <item name="android:background">@drawable/stat_radius_background</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="Button" parent="AppTheme">
+        <item name="android:textSize">@dimen/default_font_size</item>
+        <item name="fontFamily">@font/proxima_nova_regular</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/button_ripple_background</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+</resources>
