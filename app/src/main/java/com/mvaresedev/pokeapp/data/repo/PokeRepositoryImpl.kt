@@ -15,6 +15,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.withContext
 
 
 class PokeRepositoryImpl (
@@ -42,7 +43,7 @@ class PokeRepositoryImpl (
         }
 
     override suspend fun retrieveSinglePokemon(pokemonId: Int): Flow<Pokemon?> {
-        with(Dispatchers.IO) {
+        withContext(Dispatchers.IO) {
             val pokemonEntity = pokemonDb.getPokemonDao().getPokemonById(pokemonId)
             return flowOf(
                     if(pokemonEntity != null)
